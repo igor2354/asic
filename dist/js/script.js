@@ -112,10 +112,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 	});
 
-	let galleryThumbs = new Swiper(".gallery-thumbs", {
+	let galleryThumbs = new Swiper(".product-gallary_samll", {
 		centeredSlides: true,
 		centeredSlidesBounds: true,
-		slidesPerView: 5,
+		spaceBetween: 10,
+		slidesPerView: 3,
 		watchOverflow: true,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
@@ -125,38 +126,13 @@ document.addEventListener("DOMContentLoaded", function () {
 			prevEl: ".swiper-button-prev",
 		},
 		breakpoints: {
-			375: {
-				slidesPerView: 4,
-				centeredSlides: true,
-				direction: "horizontal",
-				navigation: {
-					enabled: false,
-				},
-			},
-			550: {
-				slidesPerView: 4,
-				centeredSlides: false,
-				direction: "horizontal",
-			},
-			650: {
-				slidesPerView: 4,
-				centeredSlides: false,
-			},
-			880: {
-				slidesPerView: 4,
-				centeredSlides: false,
-			},
-			1024: {
-				slidesPerView: 4,
-				centeredSlides: false,
-			},
-			1200: {
-				slidesPerView: 5,
+			768: {
+				spaceBetween: 20,
 			},
 		},
 	});
 
-	let galleryMain = new Swiper(".gallery-main", {
+	let galleryMain = new Swiper(".product-gallary_big", {
 		watchOverflow: true,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
@@ -173,11 +149,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				navigation: {
 					nextEl: ".swipermain-button-next",
 					prevEl: ".swipermain-button-prev",
-				},
-			},
-			650: {
-				navigation: {
-					enabled: false,
 				},
 			},
 		},
@@ -321,6 +292,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function () {
+	// ПЛАВНЫЙ ЯКОРЬ
+	$(".js-anchor").click(function () {
+		let target = $(this).attr("href");
+		$("html, body").animate(
+			{
+				scrollTop: $(target).offset().top - 150,
+			},
+			800
+		);
+		return false;
+	});
 	// Активация мобильного меню
 	$(".mm-menu-icon").append($(".main_menu-icon.compare a, .main_menu-icon.fav a, .main_menu-icon.cart a").clone(true));
 

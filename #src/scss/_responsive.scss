@@ -530,10 +530,6 @@
 		font-size: 20px;
 		line-height: 25px;
 	}
-	.product .tabcontent {
-		font-size: 20px;
-		line-height: 25px;
-	}
 	.product .main-info a.link:not(.negative) {
 		font-size: 18px;
 		line-height: 23px;
@@ -712,7 +708,6 @@
 	}
 	.product .tabcontent {
 		font-size: 18px;
-		line-height: 23px;
 	}
 	.product .main-info a.link:not(.negative) {
 		font-size: 16px;
@@ -1131,7 +1126,6 @@
 	}
 	.product .tab button {
 		font-size: 16px;
-		line-height: 22px;
 	}
 
 	.product .main-info a.link.negative:after {
@@ -1735,7 +1729,6 @@
 	}
 	.product .tabcontent {
 		font-size: 16px;
-		line-height: 19px;
 	}
 	.offer-block img {
 		max-width: 393px;
@@ -2051,9 +2044,6 @@
 	}
 	.product .wrapper .info {
 		margin-top: 24px;
-	}
-	.product .tab {
-		overflow-x: scroll;
 	}
 	.product .tab button {
 		white-space: nowrap;
@@ -2539,9 +2529,6 @@
 	.swipermain-button-prev,
 	.swipermain-button-next {
 		display: block;
-	}
-	.product .tab {
-		gap: 50px;
 	}
 	.services .service .img {
 		margin: 0 -16px;
@@ -3213,16 +3200,11 @@
 	.product .main-info .btns {
 		gap: 8px;
 	}
-	.product .tab {
-		gap: 32px;
-	}
 	.product .tab button {
 		font-size: 14px;
-		line-height: 17px;
 	}
 	.product .tabcontent {
 		font-size: 14px;
-		line-height: 17px;
 	}
 	.services.offer .img,
 	.offer-block img {
