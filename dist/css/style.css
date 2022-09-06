@@ -4336,6 +4336,24 @@ footer input[type="email"] {
     .pagination span {
       font-size: 14px; } }
 
+.similar-product {
+  margin-top: 80px; }
+  .similar-product_title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 120%;
+    margin-bottom: 30px; }
+  .similar-product_slider .swiper-pagination {
+    top: initial;
+    bottom: initial;
+    margin-top: 20px; }
+
+@media (max-width: 1170px) {
+  .similar-product {
+    margin-top: 40px; }
+    .similar-product_title {
+      font-size: 20px; } }
+
 /* Каталог */
 .filter_icon {
   display: none; }
@@ -4358,38 +4376,6 @@ footer input[type="email"] {
   display: block;
   text-align: center;
   margin-bottom: 16px; }
-
-.sort {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-self: flex-end;
-  gap: 48px; }
-
-.sort_dropdown {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.sort_dropdown label {
-  margin-right: 15px; }
-
-.sort_dropdown select {
-  border: 0;
-  color: var(--red);
-  background: #fff; }
-
-.sort_dropdown select option {
-  color: #000; }
 
 .filter {
   background: #f5f5f5;
@@ -4471,91 +4457,6 @@ input:checked + .tab-label::after {
 input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 16px 0 0 0; }
-
-.filter .search {
-  background: #e7e7e7;
-  border-radius: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  max-width: 432px;
-  margin-left: auto; }
-
-.filter .search .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  padding: 14px 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px; }
-
-.filter .search input {
-  width: 100%;
-  font-size: 18px; }
-
-.filter .search input,
-.filter .search button {
-  background: transparent;
-  border: 0; }
-
-.filter .search input:focus {
-  outline: 0; }
-
-.filter .search button {
-  cursor: pointer; }
-
-.filter .search button img {
-  width: 24px; }
-
-.filter .search input::-webkit-input-placeholder {
-  color: var(--black);
-  -webkit-transition: 0.2s;
-  transition: 0.2s; }
-
-.filter .search input::-moz-placeholder {
-  color: var(--black);
-  -moz-transition: 0.2s;
-  transition: 0.2s; }
-
-.filter .search input:-ms-input-placeholder {
-  color: var(--black);
-  -ms-transition: 0.2s;
-  transition: 0.2s; }
-
-.filter .search input::-ms-input-placeholder {
-  color: var(--black);
-  -ms-transition: 0.2s;
-  transition: 0.2s; }
-
-.filter .search input::placeholder {
-  color: var(--black);
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s; }
-
-.filter .search input:focus::-webkit-input-placeholder {
-  color: transparent; }
-
-.filter .search input:focus::-moz-placeholder {
-  color: transparent; }
-
-.filter .search input:focus:-ms-input-placeholder {
-  color: transparent; }
-
-.filter .search input:focus::-ms-input-placeholder {
-  color: transparent; }
-
-.filter .search input:focus::placeholder {
-  color: transparent; }
 
 .filter_values {
   display: -webkit-box;

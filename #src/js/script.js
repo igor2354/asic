@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	if (arrSimilarProductSliders.length > 0) {
 		arrSimilarProductSliders.forEach((element) => {
-			let slider = element.querySelector(".similar_product-slider");
+			let slider = element.querySelector(".similar-product_slider");
 			let next = element.querySelector(".swiper-button-next");
 			let prev = element.querySelector(".swiper-button-prev");
 
@@ -64,6 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
 					550: {
 						slidesPerView: 2,
 					},
+				},
+
+				pagination: {
+					el: element.querySelector(".swiper-pagination"),
+					type: "bullets",
 				},
 			});
 		});
