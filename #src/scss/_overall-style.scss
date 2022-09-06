@@ -1476,7 +1476,8 @@ form.promo button:hover {
 .contact .name,
 .map .name {
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 24px;
+	font-weight: bold;
 	line-height: 24px;
 	opacity: 0.7;
 	margin-bottom: 16px;
@@ -1577,7 +1578,7 @@ form.promo button:hover {
 
 .error .wrapper {
 	position: relative;
-	padding: 200px 0;
+	padding: 200px 0 80px 0;
 }
 
 .error .text {

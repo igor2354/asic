@@ -1,0 +1,26 @@
+.services {
+	& .heading {
+		margin-bottom: 50px;
+	}
+	&_wrap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+	}
+}
+
+@media (max-width: 1170px) {
+	.services {
+		& .heading {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.services {
+		&_wrap {
+			grid-template-columns: 1fr;
+		}
+	}
+}

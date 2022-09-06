@@ -1,0 +1,26 @@
+.news-list {
+	& .heading {
+		margin-bottom: 50px;
+	}
+	&_wrap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+	}
+}
+
+@media (max-width: 1170px) {
+	.news-list {
+		& .heading {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.news-list {
+		&_wrap {
+			grid-template-columns: 1fr;
+		}
+	}
+}

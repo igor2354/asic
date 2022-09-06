@@ -1507,7 +1507,8 @@ form.promo button:hover {
 .contact .name,
 .map .name {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: bold;
   line-height: 24px;
   opacity: 0.7;
   margin-bottom: 16px; }
@@ -1605,7 +1606,7 @@ form.promo button:hover {
 
 .error .wrapper {
   position: relative;
-  padding: 200px 0; }
+  padding: 200px 0 80px 0; }
 
 .error .text {
   display: -webkit-box;
@@ -3743,9 +3744,9 @@ footer input[type="email"] {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 50px;
-     -moz-column-gap: 50px;
-          column-gap: 50px;
+  -webkit-column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
   row-gap: 10px;
   z-index: 2; }
 
@@ -6267,6 +6268,38 @@ input:checked ~ .tab-content {
     padding: 15px 15px 15px 50px; }
   .form-services_name {
     font-size: 13px; } }
+
+.news-list .heading {
+  margin-bottom: 50px; }
+
+.news-list_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px; }
+
+@media (max-width: 1170px) {
+  .news-list .heading {
+    margin-bottom: 30px; } }
+
+@media (max-width: 768px) {
+  .news-list_wrap {
+    grid-template-columns: 1fr; } }
+
+.services .heading {
+  margin-bottom: 50px; }
+
+.services_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px; }
+
+@media (max-width: 1170px) {
+  .services .heading {
+    margin-bottom: 30px; } }
+
+@media (max-width: 768px) {
+  .services_wrap {
+    grid-template-columns: 1fr; } }
 
 @media only screen and (max-width: 1824px) {
   .catalog .item .btns a.link:not(.negative) {
