@@ -890,9 +890,7 @@
 		line-height: 50px;
 		margin-bottom: 24px;
 	}
-	.services.offer .service {
-		padding: 55px 56px;
-	}
+
 	.service .btns a.link {
 		padding: 12px 30px;
 		font-size: 18px;
@@ -916,9 +914,6 @@
 	.offer-text {
 		font-size: 18px;
 		line-height: 23px;
-	}
-	.service {
-		padding: 35px;
 	}
 }
 
@@ -1696,9 +1691,7 @@
 	.services.offer .img {
 		max-width: 418px;
 	}
-	.services.offer .service {
-		padding: 16px 24px;
-	}
+
 	.product h1 {
 		font-size: 24px;
 		line-height: 29px;
@@ -1888,9 +1881,7 @@
 		gap: 0;
 		align-items: baseline;
 	}
-	.service {
-		padding: 16px;
-	}
+
 	.services .service .img {
 		max-width: 300px;
 	}
@@ -2062,14 +2053,17 @@
 	.offer-block img {
 		max-width: 370px;
 	}
-	.services.offer .service {
+	.service .service_wrap {
 		flex-direction: column;
 		gap: 24px;
 		align-items: baseline;
-		padding-bottom: 0;
 	}
 	.services.offer .img {
-		max-width: unset;
+		max-width: 100%;
+		width: 100%;
+		& img {
+			width: 100%;
+		}
 	}
 	.service .text {
 		margin: 16px 0;
@@ -2529,13 +2523,6 @@
 	.swipermain-button-prev,
 	.swipermain-button-next {
 		display: block;
-	}
-	.services .service .img {
-		margin: 0 -16px;
-	}
-	.services:not(.offer) .service {
-		margin: 0 -24px 24px;
-		padding-bottom: 0;
 	}
 }
 
@@ -3206,7 +3193,7 @@
 	.product .tabcontent {
 		font-size: 14px;
 	}
-	.services.offer .img,
+
 	.offer-block img {
 		margin: 0 -24px;
 	}
@@ -3420,15 +3407,9 @@
 	.order_list .item {
 		gap: 12px;
 	}
-	.services.offer .service {
-		padding: 16px;
-	}
-	.services.offer .img,
+
 	.offer-block img {
 		margin: 0 -16px;
-	}
-	.services:not(.offer) .service {
-		margin: 0 -16px 24px;
 	}
 }
 

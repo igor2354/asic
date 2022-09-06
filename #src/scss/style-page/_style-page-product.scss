@@ -589,6 +589,13 @@
 	text-align: center;
 }
 
+.rating_reviews-item {
+	& .rating__item svg {
+		width: 18px;
+		height: 18px;
+	}
+}
+
 .product-reviews_button.link {
 	max-width: 100%;
 	width: 100%;

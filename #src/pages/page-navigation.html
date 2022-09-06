@@ -1,0 +1,145 @@
+@@include("../components/_header.html")
+
+<main class="main">
+	<section class="page-navigation">
+		<div class="container">
+			<div class="page-navigation__row">
+				<div class="page-navigation__column">
+					<div class="page-navigation__title title-h2"><span>Страницы</span></div>
+
+					<div class="page-navigation__list">
+						<a href="./index.html" class="page-navigation__item">Главная</a>
+						<a href="./page-catalog.html" class="page-navigation__item">Каталог</a>
+						<a href="./page-product.html" class="page-navigation__item">Карточка товара</a>
+						<a href="./page-cart.html" class="page-navigation__item">Корзина</a>
+						<a href="./page-cart2.html" class="page-navigation__item">Оформление заказа</a>
+						<a href="./page-about.html" class="page-navigation__item">О нас</a>
+						<a href="./page-contacts.html" class="page-navigation__item">Контакты</a>
+						<a href="./page-delivery.html" class="page-navigation__item">Доставка</a>
+						<a href="./page-error.html" class="page-navigation__item">404</a>
+						<a href="./page-news.html" class="page-navigation__item">Новость</a>
+						<a href="./page-newslist.html" class="page-navigation__item">Все новости</a>
+						<a href="./page-reviews.html" class="page-navigation__item">Озывы</a>
+						<a href="./page-service.html" class="page-navigation__item">Сервисный центр </a>
+						<a href="./page-services.html" class="page-navigation__item">Сервисы</a>
+					</div>
+				</div>
+
+				<div class="page-navigation__column">
+					<div class="page-navigation__title title-h2"><span>Попапы</span></div>
+
+					<div class="page-navigation__list">
+						<a href="#popup-entry" class="page-navigation__item js-modal-show" data-popup="popup-entry">Войти</a>
+						<a href="#popup-password-rec" class="page-navigation__item js-modal-show" data-popup="popup-password-rec">Восстановление пароля</a>
+						<a href="#popup-regist" class="page-navigation__item js-modal-show" data-popup="popup-regist">Зарегистрироваться</a>
+						<a href="#popup-review" class="page-navigation__item js-modal-show" data-popup="popup-review">Оставить отзыв</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<style>
+	.page-navigation {
+		padding: 100px 0;
+	}
+
+	.page-navigation__row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+
+	.page-navigation__title {
+		font-size: 32px;
+		font-weight: bold;
+		margin-bottom: 40px;
+	}
+
+	.page-navigation__list {
+		display: grid;
+		gap: 20px;
+	}
+
+	.page-navigation__item {
+		font-size: 24px;
+		line-height: 180%;
+		color: #aa1d26;
+	}
+
+	@media (max-width: 768px) {
+		.page-navigation__item {
+			font-size: 18px;
+		}
+	}
+</style>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		// Открытие попапов МОЖНО УДАЛЯТЬ
+		let popupAllElem = Array.prototype.slice.call(document.querySelectorAll(".modal"));
+		let openButton = Array.prototype.slice.call(document.querySelectorAll(".js-modal-show"));
+		let closeButton = Array.prototype.slice.call(document.querySelectorAll(".js-modal-close"));
+		let body = document.querySelector("body");
+
+		function openPopup(e) {
+			e.preventDefault();
+			let modal = document.querySelector(`#${e.target.dataset.popup}`);
+
+			modal.classList.add("active");
+
+			body.classList.add("lock");
+
+			setTimeout(() => {
+				modal.style.opacity = "1";
+			}, 100);
+		}
+
+		function closePopup() {
+			popupAllElem.forEach((element) => {
+				if (element.classList.contains("active")) {
+					let modal = element;
+
+					setTimeout(() => {
+						modal.classList.remove("active");
+					}, 300);
+
+					modal.style.opacity = "0";
+
+					body.classList.remove("lock");
+				}
+			});
+		}
+
+		if (openButton != null) {
+			openButton.forEach((element) => {
+				element.addEventListener("click", (e) => {
+					closePopup(e);
+
+					openPopup(e);
+				});
+			});
+		}
+
+		if (closeButton != null) {
+			closeButton.forEach((element) => {
+				element.addEventListener("click", (e) => {
+					closePopup();
+				});
+			});
+		}
+
+		if (popupAllElem != null) {
+			popupAllElem.forEach((element) => {
+				element.addEventListener("click", (e) => {
+					if (e.target.classList.contains("modal")) {
+						closePopup();
+					}
+				});
+			});
+		}
+	});
+</script>
+
+@@include("../components/_footer.html")

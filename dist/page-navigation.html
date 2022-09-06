@@ -469,205 +469,147 @@
 			</header>
 
 
-<div class="breadcrumbs">
-	<div class="container">
-		<ul class="breadcrumb">
-			<li><a href="/">Главная</a></li>
-			<li>Каталог</li>
-		</ul>
-	</div>
-</div>
-
-<div id="main" class="cartpage">
-	<div class="making-order">
+<main class="main">
+	<section class="page-navigation">
 		<div class="container">
-			<div class="heading">Оформление заказа</div>
+			<div class="page-navigation__row">
+				<div class="page-navigation__column">
+					<div class="page-navigation__title title-h2"><span>Страницы</span></div>
 
-			<div class="making-order_row">
-				<div class="making-order_column">
-					<div class="making-order_form-wrap">
-						<div class="making-order_form-name">Контактные данные</div>
-						<form action="#" class="making-order_form-contact form-contact">
-							<div class="form-contact_wrap-form">
-								<div class="form-contact_input-wrap">
-									<input class="form-contact_input" type="text" placeholder="Ваше ФИО *" />
-								</div>
-
-								<div class="form-contact_input-wrap">
-									<input class="form-contact_input" type="tel" placeholder="Ваш телефон *" />
-								</div>
-
-								<div class="form-contact_input-wrap">
-									<input class="form-contact_input" type="text" placeholder="Ваш E-mail *" />
-								</div>
-
-								<div class="form-contact_input-wrap">
-									<input class="form-contact_input" type="text" placeholder="Город" />
-								</div>
-
-								<div class="form-contact_input-wrap">
-									<input class="form-contact_input" type="text" placeholder="Улица" />
-								</div>
-
-								<div class="form-contact_input-wrap">
-									<input class="form-contact_input" type="text" placeholder="Дом, квартира" />
-								</div>
-
-								<div class="form-contact_input-wrap --textarea">
-									<textarea class="form-contact_textarea" placeholder="Комментарий к заказу"></textarea>
-								</div>
-							</div>
-						</form>
-					</div>
-
-					<div class="making-order_form-wrap">
-						<div class="making-order_form-name">Выберите способ доставки</div>
-						<form action="#" class="making-order_from-delivery from-delivery">
-							<div class="from-delivery_list">
-								<div class="from-delivery_item">
-									<div class="from-delivery_left">
-										<label class="from-delivery_radio form-radio">
-											<input name="delivery" type="radio" checked />
-											<span class="from-delivery_radio-text">Самовывоз</span>
-										</label>
-										<div class="from-delivery_text">Самовывоз из точки выдачи заказов по адресу:</div>
-										<div class="from-delivery_address">МО, п. Заречье, ул. Торговая, д.2</div>
-									</div>
-									<div class="from-delivery_right">
-										<div class="from-delivery_value">бесплатно</div>
-									</div>
-								</div>
-
-								<div class="from-delivery_item">
-									<div class="from-delivery_left">
-										<label class="from-delivery_radio form-radio">
-											<input name="delivery" type="radio" />
-											<span class="from-delivery_radio-text">Доставка по Москве</span>
-										</label>
-										<div class="from-delivery_text">Заказ доставляется до адреса покупателя в Москве, в пределах МКАД.</div>
-									</div>
-									<div class="from-delivery_right">
-										<div class="from-delivery_value">600 р.</div>
-									</div>
-								</div>
-
-								<div class="from-delivery_item">
-									<div class="from-delivery_left">
-										<label class="from-delivery_radio form-radio">
-											<input name="delivery" type="radio" />
-											<span class="from-delivery_radio-text">Доставка по Московской области</span>
-										</label>
-										<div class="from-delivery_text">Заказ доставляется до адреса покупателя в МО, не более 25 км от МКАД.</div>
-									</div>
-									<div class="from-delivery_right">
-										<div class="from-delivery_value">1 200 р.</div>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-
-					<div class="making-order_form-wrap">
-						<div class="making-order_form-name">Выберите способ оплаты</div>
-
-						<form action="#" class="making-order_form-payment form-payment">
-							<div class="form-payment_list">
-								<label class="form-payment_radio">
-									<input name="payment" type="radio" checked />
-									<div class="form-payment_item">
-										<div class="form-payment_icon"><img src="./img/icon-order-payment-1.svg" alt="" /></div>
-										<div class="form-payment_group">
-											<div class="form-payment_name">Наличными при получении</div>
-											<div class="form-payment_text">Поясняющий текст</div>
-										</div>
-									</div>
-								</label>
-
-								<label class="form-payment_radio">
-									<input name="payment" type="radio" />
-									<div class="form-payment_item">
-										<div class="form-payment_icon"><img src="./img/icon-order-payment-2.svg" alt="" /></div>
-										<div class="form-payment_group">
-											<div class="form-payment_name">Оплата в криптовалюте USD</div>
-											<div class="form-payment_text">Поясняющий текст</div>
-										</div>
-									</div>
-								</label>
-
-								<label class="form-payment_radio">
-									<input name="payment" type="radio" />
-									<div class="form-payment_item">
-										<div class="form-payment_icon"><img src="./img/icon-order-payment-3.svg" alt="" /></div>
-										<div class="form-payment_group">
-											<div class="form-payment_name">Безналичным переводом</div>
-											<div class="form-payment_text">Поясняющий текст</div>
-										</div>
-									</div>
-								</label>
-
-								<label class="form-payment_radio">
-									<input name="payment" type="radio" />
-									<div class="form-payment_item">
-										<div class="form-payment_icon"><img src="./img/icon-order-payment-4.svg" alt="" /></div>
-										<div class="form-payment_name">Безналичная оплата для организаций (с НДС)</div>
-									</div>
-								</label>
-							</div>
-						</form>
+					<div class="page-navigation__list">
+						<a href="./index.html" class="page-navigation__item">Главная</a>
+						<a href="./page-catalog.html" class="page-navigation__item">Каталог</a>
+						<a href="./page-product.html" class="page-navigation__item">Карточка товара</a>
+						<a href="./page-cart.html" class="page-navigation__item">Корзина</a>
+						<a href="./page-cart2.html" class="page-navigation__item">Оформление заказа</a>
+						<a href="./page-about.html" class="page-navigation__item">О нас</a>
+						<a href="./page-contacts.html" class="page-navigation__item">Контакты</a>
+						<a href="./page-delivery.html" class="page-navigation__item">Доставка</a>
+						<a href="./page-error.html" class="page-navigation__item">404</a>
+						<a href="./page-news.html" class="page-navigation__item">Новость</a>
+						<a href="./page-newslist.html" class="page-navigation__item">Все новости</a>
+						<a href="./page-reviews.html" class="page-navigation__item">Озывы</a>
+						<a href="./page-service.html" class="page-navigation__item">Сервисный центр </a>
+						<a href="./page-services.html" class="page-navigation__item">Сервисы</a>
 					</div>
 				</div>
 
-				<div class="making-order_column">
-					<div class="making-order_result order-result">
-						<div class="order-result_row">
-							<div class="order-result_title">Ваш заказ</div>
-							<div class="order-result_group-info">
-								<div class="order-result_product">
-									<div class="order-result_product-wrap">
-										<div class="order-result_name">Товары</div>
-										<div class="order-result_value"><span>10 000</span> р.</div>
-									</div>
-									<div class="order-result_product-quantity"><span>4 </span>шт.</div>
-								</div>
+				<div class="page-navigation__column">
+					<div class="page-navigation__title title-h2"><span>Попапы</span></div>
 
-								<div class="order-result_discount">
-									<div class="order-result_name">Скидка</div>
-									<div class="order-result_value"><span>- 2 000</span> р.</div>
-								</div>
-
-								<div class="order-result_delivery">
-									<div class="order-result_name">Доставка</div>
-									<div class="order-result_value"><span>600</span> р.</div>
-								</div>
-
-								<div class="order-result_payment">
-									<div class="order-result_name">Оплата при получении</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="order-result_row">
-							<div class="order-result_price-result">
-								<div class="order-result_title-price">Итого к оплате:</div>
-								<div class="order-result_price"><span>8 845</span> р.</div>
-							</div>
-
-							<div class="order-result_button">
-								<a href="#" class="order-result_button-add">Заказ подтверждаю</a>
-								<a href="#" class="order-result_button-buy-oneclick">Заказ в один клик</a>
-							</div>
-
-							<div class="order-result_text">
-								Я даю своё согласие на обработку моих персональных данных на условиях
-								<a href="#">Соглашения об обработке персональных данных.</a>
-							</div>
-						</div>
+					<div class="page-navigation__list">
+						<a href="#popup-entry" class="page-navigation__item js-modal-show" data-popup="popup-entry">Войти</a>
+						<a href="#popup-password-rec" class="page-navigation__item js-modal-show" data-popup="popup-password-rec">Восстановление пароля</a>
+						<a href="#popup-regist" class="page-navigation__item js-modal-show" data-popup="popup-regist">Зарегистрироваться</a>
+						<a href="#popup-review" class="page-navigation__item js-modal-show" data-popup="popup-review">Оставить отзыв</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	</section>
+</main>
+
+<style>
+	.page-navigation {
+		padding: 100px 0;
+	}
+
+	.page-navigation__row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+
+	.page-navigation__title {
+		font-size: 32px;
+		font-weight: bold;
+		margin-bottom: 40px;
+	}
+
+	.page-navigation__list {
+		display: grid;
+		gap: 20px;
+	}
+
+	.page-navigation__item {
+		font-size: 24px;
+		line-height: 180%;
+		color: #aa1d26;
+	}
+
+	@media (max-width: 768px) {
+		.page-navigation__item {
+			font-size: 18px;
+		}
+	}
+</style>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		// Открытие попапов МОЖНО УДАЛЯТЬ
+		let popupAllElem = Array.prototype.slice.call(document.querySelectorAll(".modal"));
+		let openButton = Array.prototype.slice.call(document.querySelectorAll(".js-modal-show"));
+		let closeButton = Array.prototype.slice.call(document.querySelectorAll(".js-modal-close"));
+		let body = document.querySelector("body");
+
+		function openPopup(e) {
+			e.preventDefault();
+			let modal = document.querySelector(`#${e.target.dataset.popup}`);
+
+			modal.classList.add("active");
+
+			body.classList.add("lock");
+
+			setTimeout(() => {
+				modal.style.opacity = "1";
+			}, 100);
+		}
+
+		function closePopup() {
+			popupAllElem.forEach((element) => {
+				if (element.classList.contains("active")) {
+					let modal = element;
+
+					setTimeout(() => {
+						modal.classList.remove("active");
+					}, 300);
+
+					modal.style.opacity = "0";
+
+					body.classList.remove("lock");
+				}
+			});
+		}
+
+		if (openButton != null) {
+			openButton.forEach((element) => {
+				element.addEventListener("click", (e) => {
+					closePopup(e);
+
+					openPopup(e);
+				});
+			});
+		}
+
+		if (closeButton != null) {
+			closeButton.forEach((element) => {
+				element.addEventListener("click", (e) => {
+					closePopup();
+				});
+			});
+		}
+
+		if (popupAllElem != null) {
+			popupAllElem.forEach((element) => {
+				element.addEventListener("click", (e) => {
+					if (e.target.classList.contains("modal")) {
+						closePopup();
+					}
+				});
+			});
+		}
+	});
+</script>
 
 <footer>
   <div class="container">
