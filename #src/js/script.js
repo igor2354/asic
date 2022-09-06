@@ -113,10 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	let galleryThumbs = new Swiper(".product-gallary_samll", {
-		centeredSlides: true,
-		centeredSlidesBounds: true,
 		spaceBetween: 10,
-		slidesPerView: 3,
+		slidesPerView: 4,
 		watchOverflow: true,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
