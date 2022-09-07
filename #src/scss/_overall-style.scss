@@ -1204,7 +1204,7 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .total_block {
 	background: #f5f5f5;
-	padding-top: 48px;
+	padding: 20px 0 40px 0;
 	height: fit-content;
 }
 
@@ -1255,37 +1255,47 @@ form#buy input {
 }
 
 form.promo button {
-	background: var(--red);
-	border-radius: 16px;
-	color: #fff;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 19px;
-	padding: 17px;
-	border: 1px solid var(--red);
 	cursor: pointer;
-}
-
-form.promo button:hover {
-	background: #fff;
-	color: var(--red);
+	position: relative;
+	max-width: 250px;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	border: 1px solid transparent;
+	padding: 8px 15px;
+	background: var(--red);
+	border-radius: 24px;
+	z-index: 2;
+	margin: 0 auto 0 auto;
+	&:hover {
+		border-color: var(--red);
+		background: transparent;
+		color: var(--red);
+	}
 }
 
 .total_block .checkout {
-	display: flex;
-	background: var(--red);
-	color: #fff;
-	align-items: center;
-	justify-content: center;
-	margin-top: 40px;
-	padding: 19px 0;
+	display: block;
+	margin: 20px auto 0 auto;
+	max-width: 250px;
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+	max-width: 250px;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
 	border: 1px solid var(--red);
-	font-size: 20px;
-}
-
-.total_block .checkout:hover {
-	background: #fff;
+	background: transparent;
 	color: var(--red);
+	padding: 8px 15px;
+	border-radius: 24px;
+	z-index: 2;
+	&:hover {
+		background: var(--red);
+		color: #fff;
+	}
 }
 
 .checkout_cart {
@@ -2318,7 +2328,7 @@ form#buy {
 	background-repeat: no-repeat;
 	background-position: center right;
 	padding: 176px 0;
-	margin-top: 120px;
+	margin-top: 60px;
 }
 
 .buy p:not(.manager) {
@@ -2342,10 +2352,6 @@ form#buy {
 .share .ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__badge,
 .share .ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__mobile-popup-badge {
 	background-color: var(--red);
-}
-
-.share .ya-share2__container_shape_round.ya-share2__container_size_l .ya-share2__badge .ya-share2__icon:not(.ya-share2__icon_messenger-contact):not(.ya-share2__icon_more):not(.ya-share2__icon_copy) {
-	background-size: 30px 30px;
 }
 
 .share .ya-share2__container_mobile.ya-share2__container_size_l .ya-share2__icon {
@@ -2402,6 +2408,15 @@ form#buy {
 		background: transparent;
 		color: var(--red);
 	}
+	&.--border {
+		border: 1px solid var(--red);
+		background: transparent;
+		color: var(--red);
+		&:hover {
+			background: var(--red);
+			color: #fff;
+		}
+	}
 }
 
 .wrap-input {
@@ -2415,6 +2430,7 @@ form#buy {
 		line-height: 140%;
 		text-transform: uppercase;
 		color: #000000;
+		font: inherit;
 	}
 
 	& input,

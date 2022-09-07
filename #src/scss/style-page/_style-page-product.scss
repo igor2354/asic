@@ -250,10 +250,7 @@
 		font-size: 14px;
 		font-weight: bold;
 		margin-bottom: 15px;
-		& a {
-			font-weight: initial;
-			color: var(--red);
-		}
+		color: var(--red);
 	}
 
 	&_all {

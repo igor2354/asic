@@ -171,10 +171,6 @@
 					</li>
 
 					<li>
-						<a href="#">Отзывы</a>
-					</li>
-
-					<li>
 						<a href="#">Новости</a>
 					</li>
 
@@ -261,10 +257,6 @@
 
 											<li class="header_nav-item">
 												<a href="#">Возврат</a>
-											</li>
-
-											<li class="header_nav-item">
-												<a href="#">Отзывы</a>
 											</li>
 
 											<li class="header_nav-item">
@@ -467,6 +459,9 @@
 					</div>
 				</div>
 			</header>
+		</div>
+	</body>
+</html>
 
 
 <main class="main">
@@ -488,7 +483,6 @@
 						<a href="./page-error.html" class="page-navigation__item">404</a>
 						<a href="./page-news.html" class="page-navigation__item">Новость</a>
 						<a href="./page-newslist.html" class="page-navigation__item">Все новости</a>
-						<a href="./page-reviews.html" class="page-navigation__item">Озывы</a>
 						<a href="./page-service.html" class="page-navigation__item">Сервисный центр </a>
 						<a href="./page-services.html" class="page-navigation__item">Сервисы</a>
 					</div>
@@ -502,6 +496,10 @@
 						<a href="#popup-password-rec" class="page-navigation__item js-modal-show" data-popup="popup-password-rec">Восстановление пароля</a>
 						<a href="#popup-regist" class="page-navigation__item js-modal-show" data-popup="popup-regist">Зарегистрироваться</a>
 						<a href="#popup-review" class="page-navigation__item js-modal-show" data-popup="popup-review">Оставить отзыв</a>
+						<a href="#popup-one-click" class="page-navigation__item js-modal-show" data-popup="popup-one-click">Купить в 1 клик</a>
+						<a href="#popup-result" class="page-navigation__item js-modal-show" data-popup="popup-result">Спасибо</a>
+						<a href="#popup-add-basket" class="page-navigation__item js-modal-show" data-popup="popup-add-basket">Товар добавлен в корзину</a>
+						<a href="#popup-add-basket" class="page-navigation__item js-modal-show" data-popup="popup-order">Отсавить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -901,6 +899,157 @@
         </div>
   
       </div>
+    </div>
+  </div>
+
+  <div class="popup-general modal --one-click" id="popup-one-click">
+    <div class="popup-general__popup-wrap">
+      <div class="popup-general__body">
+  
+        <div class="popup-general__group-title">
+          <div class="popup-general__title">Купить в 1 клик</div>
+          <div class="popup-general__close js-modal-close"></div>
+        </div>
+  
+        <div class="popup-general__wrap">
+          <div class="popup-general__add-basket">
+
+            <form action="#" class="popup-general__form form-popup-general">
+              <div class="form-popup-general__lsit">
+                <div class="form-popup-general__wrap-input wrap-input">
+                  <div class="wrap-input__name">Ваше имя</div>
+                  <input type="text">
+                </div>
+  
+                <div class="form-popup-general__wrap-input wrap-input">
+                  <div class="wrap-input__name">Ваш телефон</div>
+                  <input type="text">
+                </div>
+              </div>
+  
+              <div class="form-popup-general__wrap-button">
+                <div class="form-popup-general__policy">
+                  Нажимая кнопку подтверждения заказа я даю своё согласие на обработку моих персональных данных на
+                  условиях
+                  <a href="#">Соглашения об обработке персональных данных</a>
+                </div>
+                <button type="submit" class="form-popup-general__submit btn-var-two">оформить заказ</button>
+              </div>
+            </form>
+  
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-general modal --result" id="popup-result">
+    <div class="popup-general__popup-wrap">
+      <div class="popup-general__body">
+  
+        <div class="popup-general__group-title">
+          <div class="popup-general__title">Спасибо</div>
+          <div class="popup-general__close js-modal-close"></div>
+        </div>
+  
+        <div class="popup-general__wrap">
+          <div class="popup-general__result-name">Отзыв успешно добавлен</div>
+          <div class="popup-general__result-text">Мы опубликуем ваш отзыв в ближайшее время.</div>
+          <a href="#" class="popup-general__result-button btn-var-two">продолжить покупки</a>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-general modal --add-basket" id="popup-add-basket">
+    <div class="popup-general__popup-wrap">
+      <div class="popup-general__body">
+  
+        <div class="popup-general__group-title">
+          <div class="popup-general__title">Товар добавлен в корзину</div>
+          <div class="popup-general__close js-modal-close"></div>
+        </div>
+  
+        <div class="popup-general__wrap">
+          <div class="popup-general__add-basket">
+            <div class="popup-general__add-basket-product popup-roduct">
+              <div class="popup-roduct__image"><img src="./img/products/asic.png" alt=""></div>
+  
+              <div class="popup-roduct__wrap">
+                  <div class="popup-roduct__group-name">
+                    <div class="popup-roduct__name">Antminer S17 56Th</div>
+  
+                    <div class="popup-roduct__article">Артикул: 40194</div>
+
+                    <div class="popup-roduct__price">
+                      <span class="popup-roduct__price-current">45 000 ₽</span>
+                      <span class="popup-roduct__price-old">60 000 ₽</span>
+                    </div>
+                </div>
+  
+              </div>
+            </div>
+  
+            <div class="popup-general__add-basket-slider-wrap">
+  
+              <div class="popup-general__add-basket-buttons">
+                <a href="#" class="popup-general__add-basket-button btn-var-two --border">продолжить покупки</a>
+                <a href="#" class="popup-general__add-basket-button btn-var-two">Перейти в корзину</a>
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+
+  <div class="popup-general modal --order" id="popup-order">
+    <div class="popup-general__popup-wrap">
+  
+      <div class="popup-general__body">
+  
+        <div class="popup-general__group-title">
+          <div class="popup-general__title">Отсавить заявку</div>
+          <div class="popup-general__close js-modal-close"></div>
+        </div>
+  
+        <div class="popup-general__wrap">
+  
+          <form action="#" class="popup-general__form form-popup-general">
+  
+            <div class="form-popup-general__lsit">
+              <div class="form-popup-general__wrap-input wrap-input">
+                <input type="text" placeholder="Ваше ФИО *">
+              </div>
+  
+              <div class="form-popup-general__wrap-input wrap-input">
+                <input type="text" placeholder="E-Mail*">
+              </div>
+    
+              <div class="form-popup-general__wrap-input wrap-input">
+                <textarea placeholder="Текст обращения"></textarea>
+              </div>
+            </div>
+  
+            <div class="form-popup-general__subtext">
+              Нажимая кнопку Оставить заявку я даю своё согласие на обработку
+              моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+  
+            <div class="form-popup-general__wrap-button">
+              <button type="submit" class="form-popup-general__submit btn-var-two">Оставить заявку</button>
+            </div>
+  
+          </form>
+        </div>
+  
+      </div>
+  
     </div>
   </div>
 
