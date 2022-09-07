@@ -1601,17 +1601,24 @@ form.promo button:hover {
 	right: 112px;
 }
 
+.error .heading {
+	margin-bottom: 15px;
+}
+
 .error .btns {
 	margin-top: 48px;
 	gap: 20px;
 }
 
 .error a.link {
-	padding: 23px 127.5px;
+	padding: 15px 50px;
+	line-height: 120%;
+	max-width: 330px;
+	width: 100%;
+	justify-content: center;
 }
 
 .error a.link.negative {
-	padding: 23px 85.5px;
 }
 
 .product .wrapper {

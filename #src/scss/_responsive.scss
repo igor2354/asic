@@ -238,7 +238,8 @@
 
 @media (max-width: 1550px) {
 	header .main-nav__item {
-		padding: 0 25px;
+		padding: 0 20px;
+		flex-grow: 1;
 	}
 }
 
@@ -1840,7 +1841,7 @@
 		white-space: nowrap;
 	}
 	.error .wrapper {
-		padding: 100px 0;
+		padding: 50px 0;
 	}
 	.el2 {
 		grid-template-columns: 1fr;

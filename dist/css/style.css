@@ -1630,15 +1630,21 @@ form.promo button:hover {
   position: absolute;
   right: 112px; }
 
+.error .heading {
+  margin-bottom: 15px; }
+
 .error .btns {
   margin-top: 48px;
   gap: 20px; }
 
 .error a.link {
-  padding: 23px 127.5px; }
-
-.error a.link.negative {
-  padding: 23px 85.5px; }
+  padding: 15px 50px;
+  line-height: 120%;
+  max-width: 330px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .product .wrapper {
   display: -webkit-box;
@@ -2770,7 +2776,7 @@ header .middle .main_menu .menu {
 
 /* Бегущая строка */
 #currency_table {
-  padding: 24px 0;
+  padding: 10px 0;
   border: 1px solid #e7e7e7;
   border-left: 0;
   border-right: 0; }
@@ -3701,7 +3707,7 @@ footer input[type="email"] {
   margin-bottom: 40px; }
 
 .group-title_all {
-  font-size: 18px;
+  font-size: 15px;
   color: var(--red);
   border-bottom: 1px solid var(--red);
   -webkit-transition: all 0.3s ease;
@@ -3735,7 +3741,11 @@ footer input[type="email"] {
   font-size: 32px;
   font-weight: bold;
   color: var(--red);
+  border-bottom: 1px solid transparent;
   z-index: 2; }
+
+.card-sect-catalog_name a:hover {
+  border-color: var(--red); }
 
 .card-sect-catalog_list {
   position: relative;
@@ -6484,7 +6494,10 @@ input:checked ~ .tab-content {
 
 @media (max-width: 1550px) {
   header .main-nav__item {
-    padding: 0 25px; } }
+    padding: 0 20px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; } }
 
 @media only screen and (max-width: 1500px) {
   header .top a {
@@ -7699,7 +7712,7 @@ input:checked ~ .tab-content {
     padding: 18px 100px;
     white-space: nowrap; }
   .error .wrapper {
-    padding: 100px 0; }
+    padding: 50px 0; }
   .el2 {
     grid-template-columns: 1fr;
     gap: 0; }

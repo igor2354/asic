@@ -80,7 +80,7 @@
 }
 
 .group-title_all {
-	font-size: 18px;
+	font-size: 15px;
 	color: var(--red);
 	border-bottom: 1px solid var(--red);
 	transition: all 0.3s ease;
@@ -117,7 +117,12 @@
 	font-size: 32px;
 	font-weight: bold;
 	color: var(--red);
+	border-bottom: 1px solid transparent;
 	z-index: 2;
+}
+
+.card-sect-catalog_name a:hover {
+	border-color: var(--red);
 }
 
 .card-sect-catalog_list {
