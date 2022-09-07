@@ -4367,15 +4367,15 @@ footer input[type="email"] {
   .order-manager_submit {
     cursor: pointer;
     position: relative;
-    max-width: 170px;
+    max-width: 250px;
     width: 100%;
     text-align: center;
     font-size: 14px;
     color: #fff;
     border: 1px solid transparent;
-    padding: 8px 15px;
+    padding: 15px 20px;
     background: var(--red);
-    border-radius: 24px;
+    border-radius: 30px;
     z-index: 2;
     margin-bottom: 15px; }
     .order-manager_submit:hover {
