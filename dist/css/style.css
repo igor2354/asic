@@ -3377,14 +3377,13 @@ footer input[type="email"] {
       right: 5px; }
   .popup-general__result-name {
     margin-bottom: 30px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 140%;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: #000000; }
   .popup-general__result-text {
     margin-bottom: 40px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 140%;
     color: #444444; }
   .popup-general__result-button {
