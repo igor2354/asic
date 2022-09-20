@@ -578,6 +578,10 @@
 	text-align: center;
 }
 
+.rating_not-rew {
+	font-size: 16px;
+}
+
 .rating_reviews {
 	margin-bottom: 20px;
 	font-size: 32px;
@@ -609,22 +613,23 @@
 	background: #ecedef;
 }
 
-.product-reviews_not-rev .product-reviews__title {
+.product-reviews_title {
+	font-size: 32px;
+	line-height: 120%;
+	margin-bottom: 20px;
+}
+
+.product-reviews_group-not-rev {
 	text-align: center;
 }
 
-.product-reviews_not-rev-image {
-	margin-bottom: 2.5%;
-	text-align: center;
+.product-reviews_group-not-rev .product-reviews_button {
+	max-width: 270px;
+	margin: 0 auto;
 }
 
-.product-reviews_not-rev-text {
-	margin-bottom: 2.5%;
-	text-align: center;
-}
-
-.product-reviews_not-rev-button {
-	text-align: center;
+.product-reviews_text-not-rev {
+	margin-bottom: 30px;
 }
 
 .item-rev {

@@ -1977,14 +1977,12 @@ form.promo button {
 }
 
 .team-slider .carousel-cell {
-	width: 25.2%;
 	display: flex;
 	flex-direction: column;
 	min-height: unset;
 }
 
 .team-slider .carousel-cell .photo {
-	margin-right: 32px;
 	border-radius: 8px;
 	overflow: hidden;
 }
@@ -2000,7 +1998,7 @@ form.promo button {
 }
 
 #team .control-arrows {
-	max-width: 105px;
+	max-width: 85px;
 	min-height: auto;
 }
 

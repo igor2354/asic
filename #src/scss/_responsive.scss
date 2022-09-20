@@ -207,6 +207,11 @@
 		font-size: 44px;
 		line-height: 54px;
 	}
+
+	.product-reviews_title {
+		font-size: 28px;
+	}
+
 	.product .main-info a.link:not(.negative) {
 		max-width: 260px;
 		padding: 20px 20px;
@@ -523,6 +528,9 @@
 		font-size: 40px;
 		line-height: 50px;
 	}
+	.product-reviews_title {
+		font-size: 26px;
+	}
 	.main-info .price {
 		font-size: 32px;
 		line-height: 40px;
@@ -703,6 +711,9 @@
 	.product h1 {
 		font-size: 36px;
 		line-height: 46px;
+	}
+	.product-reviews_title {
+		font-size: 24px;
 	}
 	.main-info {
 		margin-top: 40px;
@@ -900,6 +911,9 @@
 	.product h1 {
 		font-size: 32px;
 		line-height: 42px;
+	}
+	.product-reviews_title {
+		font-size: 20px;
 	}
 	.main-info .description {
 		font-size: 16px;
@@ -1473,9 +1487,6 @@
 		width: 44px;
 		height: 44px;
 		min-height: unset;
-	}
-	.team-slider .carousel-cell .photo {
-		margin-right: 24px;
 	}
 	.team-slider .name {
 		font-size: 20px;
@@ -2210,9 +2221,6 @@
 	#company {
 		margin-top: 80px;
 	}
-	.team-slider .carousel-cell {
-		width: 33%;
-	}
 	#reviews .swiper-slide .review-item:nth-child(2) {
 		display: none;
 	}
@@ -2249,7 +2257,7 @@
 		width: 32px;
 	}
 
-	.about .swiper-button-prev:after {
+	.reviews .swiper-button-prev:after {
 		transform: rotate(-90deg);
 		background-color: #f5f5f5;
 		width: 32px;
@@ -2258,7 +2266,7 @@
 		background-position: center;
 		background-repeat: no-repeat;
 	}
-	.about .swiper-button-next:after {
+	.reviews .swiper-button-next:after {
 		transform: rotate(90deg);
 		background-color: #f5f5f5;
 		width: 32px;
@@ -2425,9 +2433,6 @@
 	.about #cta .wrapper {
 		margin: 0;
 		padding: 0;
-	}
-	.team-slider .carousel-cell {
-		width: 37%;
 	}
 	#reviews .name {
 		font-size: 20px;
@@ -2619,9 +2624,7 @@
 		max-width: unset;
 		margin-left: unset;
 	}
-	.team-slider .carousel-cell {
-		width: 42%;
-	}
+
 	#reviews .heading a {
 		display: none;
 	}
@@ -2928,12 +2931,6 @@
 	}
 	#team {
 		margin-top: 40px;
-	}
-	.team-slider .carousel-cell .photo {
-		margin-right: 8px;
-	}
-	.team-slider .carousel-cell {
-		width: 45%;
 	}
 	.team-slider .name {
 		font-size: 16px;

@@ -2015,7 +2015,6 @@ form.promo button {
   margin-top: 48px; }
 
 .team-slider .carousel-cell {
-  width: 25.2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2026,7 +2025,6 @@ form.promo button {
   min-height: unset; }
 
 .team-slider .carousel-cell .photo {
-  margin-right: 32px;
   border-radius: 8px;
   overflow: hidden; }
 
@@ -2045,7 +2043,7 @@ form.promo button {
           align-items: center; }
 
 #team .control-arrows {
-  max-width: 105px;
+  max-width: 85px;
   min-height: auto; }
 
 #team .control-arrows button {
@@ -5527,6 +5525,9 @@ input:checked ~ .tab-content {
   color: #000;
   text-align: center; }
 
+.rating_not-rew {
+  font-size: 16px; }
+
 .rating_reviews {
   margin-bottom: 20px;
   font-size: 32px;
@@ -5555,19 +5556,20 @@ input:checked ~ .tab-content {
   text-align: center;
   background: #ecedef; }
 
-.product-reviews_not-rev .product-reviews__title {
+.product-reviews_title {
+  font-size: 32px;
+  line-height: 120%;
+  margin-bottom: 20px; }
+
+.product-reviews_group-not-rev {
   text-align: center; }
 
-.product-reviews_not-rev-image {
-  margin-bottom: 2.5%;
-  text-align: center; }
+.product-reviews_group-not-rev .product-reviews_button {
+  max-width: 270px;
+  margin: 0 auto; }
 
-.product-reviews_not-rev-text {
-  margin-bottom: 2.5%;
-  text-align: center; }
-
-.product-reviews_not-rev-button {
-  text-align: center; }
+.product-reviews_text-not-rev {
+  margin-bottom: 30px; }
 
 .item-rev {
   position: relative;
@@ -6491,6 +6493,8 @@ input:checked ~ .tab-content {
   .product h1 {
     font-size: 44px;
     line-height: 54px; }
+  .product-reviews_title {
+    font-size: 28px; }
   .product .main-info a.link:not(.negative) {
     max-width: 260px;
     padding: 20px 20px; }
@@ -6739,6 +6743,8 @@ input:checked ~ .tab-content {
   .product h1 {
     font-size: 40px;
     line-height: 50px; }
+  .product-reviews_title {
+    font-size: 26px; }
   .main-info .price {
     font-size: 32px;
     line-height: 40px; }
@@ -6878,6 +6884,8 @@ input:checked ~ .tab-content {
   .product h1 {
     font-size: 36px;
     line-height: 46px; }
+  .product-reviews_title {
+    font-size: 24px; }
   .main-info {
     margin-top: 40px; }
   .product .tabcontent {
@@ -7021,6 +7029,8 @@ input:checked ~ .tab-content {
   .product h1 {
     font-size: 32px;
     line-height: 42px; }
+  .product-reviews_title {
+    font-size: 20px; }
   .main-info .description {
     font-size: 16px;
     line-height: 20px; }
@@ -7456,8 +7466,6 @@ input:checked ~ .tab-content {
     width: 44px;
     height: 44px;
     min-height: unset; }
-  .team-slider .carousel-cell .photo {
-    margin-right: 24px; }
   .team-slider .name {
     font-size: 20px;
     line-height: 24px; }
@@ -8048,8 +8056,6 @@ input:checked ~ .tab-content {
     display: none; }
   #company {
     margin-top: 80px; }
-  .team-slider .carousel-cell {
-    width: 33%; }
   #reviews .swiper-slide .review-item:nth-child(2) {
     display: none; }
   #reviews .swiper {
@@ -8092,7 +8098,7 @@ input:checked ~ .tab-content {
   .related_product-arrow .swiper-button-prev::after {
     height: 32px;
     width: 32px; }
-  .about .swiper-button-prev:after {
+  .reviews .swiper-button-prev:after {
     -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
             transform: rotate(-90deg);
@@ -8102,7 +8108,7 @@ input:checked ~ .tab-content {
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat; }
-  .about .swiper-button-next:after {
+  .reviews .swiper-button-next:after {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -8245,8 +8251,6 @@ input:checked ~ .tab-content {
   .about #cta .wrapper {
     margin: 0;
     padding: 0; }
-  .team-slider .carousel-cell {
-    width: 37%; }
   #reviews .name {
     font-size: 20px;
     line-height: 24px; }
@@ -8399,8 +8403,6 @@ input:checked ~ .tab-content {
   .filter .search {
     max-width: unset;
     margin-left: unset; }
-  .team-slider .carousel-cell {
-    width: 42%; }
   #reviews .heading a {
     display: none; }
   #toCtrl {
@@ -8650,10 +8652,6 @@ input:checked ~ .tab-content {
     gap: 16px; }
   #team {
     margin-top: 40px; }
-  .team-slider .carousel-cell .photo {
-    margin-right: 8px; }
-  .team-slider .carousel-cell {
-    width: 45%; }
   .team-slider .name {
     font-size: 16px;
     line-height: 19px; }
