@@ -324,6 +324,19 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 	}
+
+	// Рейтинг
+	let arrRatingEl = Array.prototype.slice.call(document.querySelectorAll(".wrap-input__rating .rating__item"));
+	if (arrRatingEl.length > null) {
+		arrRatingEl.forEach((el, index, array) => {
+			el.addEventListener("click", () => {
+				array.forEach((element) => element.classList.remove("added"));
+				for (let i = index; i <= 4; i++) {
+					array[i].classList.add("added");
+				}
+			});
+		});
+	}
 });
 
 $(document).ready(function () {
