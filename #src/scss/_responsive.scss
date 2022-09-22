@@ -1538,6 +1538,10 @@
 		line-height: 19px;
 	}
 
+	.order_list .item .price .price-old {
+		font-size: 14px;
+	}
+
 	.total_product {
 		gap: 80px;
 	}
@@ -2297,6 +2301,11 @@
 		font-size: 14px;
 		line-height: 17px;
 	}
+
+	.order_list .item .price .price-old {
+		font-size: 12px;
+	}
+
 	.total_product {
 		gap: 60px;
 	}
@@ -2783,6 +2792,7 @@
 		margin: 4px 0 16px;
 		font-size: 12px;
 		line-height: 15px;
+		gap: 10px;
 	}
 	.order_list .item {
 		gap: 24px;

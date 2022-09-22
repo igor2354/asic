@@ -1124,8 +1124,65 @@ input[type="range"]:focus::-ms-fill-upper {
 	line-height: 24px;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: 16px;
 	margin: 25px 0;
+}
+
+.order_list .item .price .price-old {
+	font-size: 16px;
+	text-decoration: line-through;
+	color: #999999;
+}
+
+.promo_added {
+	margin: 15px 0;
+	padding-right: 20px;
+	position: relative;
+	font-size: 14px;
+	line-height: 140%;
+}
+
+.promo_added-code {
+	margin-right: 10px;
+}
+
+.promo_added-text {
+	color: #28c237;
+}
+
+.promo_added-close {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 0;
+	width: 15px;
+	height: 15px;
+}
+
+.promo_added-close::before,
+.promo_added-close::after {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	border-radius: 2px;
+	background: #999999;
+}
+
+.promo_added-close::before {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.promo_added-close::after {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 .in_stock {

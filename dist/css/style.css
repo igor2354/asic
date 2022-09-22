@@ -1163,8 +1163,60 @@ input[type="range"]:focus::-ms-fill-upper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 16px;
   margin: 25px 0; }
+
+.order_list .item .price .price-old {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: #999999; }
+
+.promo_added {
+  margin: 15px 0;
+  padding-right: 20px;
+  position: relative;
+  font-size: 14px;
+  line-height: 140%; }
+
+.promo_added-code {
+  margin-right: 10px; }
+
+.promo_added-text {
+  color: #28c237; }
+
+.promo_added-close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 0;
+  width: 15px;
+  height: 15px; }
+
+.promo_added-close::before,
+.promo_added-close::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: #999999; }
+
+.promo_added-close::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.promo_added-close::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
 
 .in_stock {
   color: #28c237; }
@@ -7502,6 +7554,8 @@ input:checked ~ .tab-content {
     margin: 16px 0 32px;
     font-size: 16px;
     line-height: 19px; }
+  .order_list .item .price .price-old {
+    font-size: 14px; }
   .total_product {
     gap: 80px; }
   .contacts .wrapper {
@@ -8136,6 +8190,8 @@ input:checked ~ .tab-content {
     margin: 8px 0 24px;
     font-size: 14px;
     line-height: 17px; }
+  .order_list .item .price .price-old {
+    font-size: 12px; }
   .total_product {
     gap: 60px; }
   .total_product a {
@@ -8531,7 +8587,8 @@ input:checked ~ .tab-content {
   .order_list .item .price {
     margin: 4px 0 16px;
     font-size: 12px;
-    line-height: 15px; }
+    line-height: 15px;
+    gap: 10px; }
   .order_list .item {
     gap: 24px; }
   .total_product {
